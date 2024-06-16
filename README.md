@@ -1,2 +1,2 @@
 ## Uses Technology
- express, mongoose, typescript, cors, dotenv, eslint, prettier, http-status
+ express, mongoose, typescript, cors, dotenv, eslint, prettier, http-status, bcrypt
