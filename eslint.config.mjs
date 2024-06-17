@@ -12,18 +12,14 @@ export default tseslint.config(
       },
     },
   },
-
-  {
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
-  },
   {
     rules: {
       "no-unused-vars": "error",
+      "no-unused-expressions": "error",
       "no-undef": "error",
       "prefer-const": "error",
       "no-console": "warn",
-      "no-unused-expressions":"error"
-
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
   {

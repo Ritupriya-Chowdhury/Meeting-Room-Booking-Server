@@ -5,15 +5,16 @@ import httpStatus from "http-status";
 
 
 const createUser = catchAsync(async (req, res) => {
-  const {  user: userData } = req.body;
+  const payload = req.body;
 
 
-  const result = await UserServices.createUserIntoDB(userData);
+ //console.log(req.body);
+  const result = await UserServices.createUserIntoDB(payload);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student is created successfully',
+    message: 'User is created successfully',
     data: result,
   });
 });
