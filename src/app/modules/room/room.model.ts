@@ -40,7 +40,7 @@ const roomSchema = new Schema<TRoom>(
 
 // Query Middleware
 roomSchema.pre('find', function (next) {
-  console.log(this);
+   // console.log(this);
   this.find({isDeleted: {$ne: true } });
   next();
 });

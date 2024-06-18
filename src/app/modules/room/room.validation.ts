@@ -10,7 +10,7 @@ import { z } from 'zod';
       .number()
       .min(0, 'Price per slot must be a non-negative number'),
     amenities: z.array(z.string().min(1, 'Amenity cannot be empty')),
-    isDeleted: z.boolean(),
+    isDeleted: z.boolean().optional(),
   }),
 });
 

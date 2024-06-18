@@ -5,7 +5,7 @@ import { MeetingRoomServices } from "./room.service";
 
 
 
-
+//create room
 const createMeetingRoom = catchAsync(async (req, res, next) => {
 
     const result = await MeetingRoomServices.createMeetingRoomIntoDB(req.body);

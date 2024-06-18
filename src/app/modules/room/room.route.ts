@@ -5,11 +5,13 @@ import { MeetingRoomControllers } from './room.controller';
 
 const router = express.Router();
 
+// add room route
 router.post(
   '',
   validateRequest(MeetingRoomZodSchema.createMeetingRoomZodSchema),
   MeetingRoomControllers.createMeetingRoom
 );
+
 
 // Get single route
 router.get('/:id', MeetingRoomControllers.getSingleMeetingRoom);
