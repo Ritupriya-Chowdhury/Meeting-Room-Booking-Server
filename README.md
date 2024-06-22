@@ -13,7 +13,7 @@
 
 
 ### Meeting Rooms Api:
-1.[Add Room api- POST]: (https://ass-3-nine.vercel.app/api/rooms)
+1.[Create Room api- POST]: (https://ass-3-nine.vercel.app/api/rooms)
 
 2.[Get All Room api- GET]: (https://ass-3-nine.vercel.app/api/rooms)
 
@@ -40,5 +40,57 @@
 
 4.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
 
-3.[My Bookings api- GET]: (https://ass-3-nine.vercel.app/api/my-bookings)
+5.[My Bookings api- GET]: (https://ass-3-nine.vercel.app/api/my-bookings)
+
+
+## Routes Which Only Accessible By Admin:
+
+1.[Create Room api- POST]: (https://ass-3-nine.vercel.app/api/rooms)
+
+2.[Update Room api- PUT]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+
+3.[Delete Room api- DELETE]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+
+4.[Create Slots api- POST]: (https://ass-3-nine.vercel.app/api/slots)
+
+5.[Get All Bookings api- GET]: (https://ass-3-nine.vercel.app/api/bookings)
+
+6.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+
+7.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+
+
+## Routes Which Only Accessible By User:
+1.[Add Booking api- POST]: (https://ass-3-nine.vercel.app/api/bookings)
+
+2.[My Bookings api- GET]: (https://ass-3-nine.vercel.app/api/my-bookings)
+
+## User Data
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "p@ssw0rd",
+    "phone": "123-456-7890",
+    "role": "user",
+    "address": "123 Main St"
+}
+
+
+## Admin Data
+
+{
+  "name": "Programming Hero",
+  "email": "web@programming-hero.com",
+  "password": "ph-password",
+  "phone": "1234567890",
+  "role": "admin", 
+  "address": "123 Main Street, City, Country"
+}
+
+
+
+
+
+
 
