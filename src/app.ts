@@ -13,17 +13,17 @@ const app : Application = express()
 app.use(express.json());
 app.use(cors());
 
-
-// application routes
-app.use('/api', router);
-
-
 const getController=(req:Request, res:Response) => {
   res.send('Hello World!')
 }
 
 
 app.get('/', getController);
+
+// application routes
+app.use('/api', router);
+
+
 
 //Global Error Handler
 app.use(globalErrorHandler);

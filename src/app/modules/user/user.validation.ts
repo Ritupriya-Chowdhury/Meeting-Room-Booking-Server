@@ -1,7 +1,8 @@
 import { z } from 'zod';
 
+
 // Define the Zod schema according to the TUser interface
-export const userValidationSchema = z.object({
+const userValidationSchema = z.object({
   body: z.object({
     name: z.string(),
     email: z.string(),

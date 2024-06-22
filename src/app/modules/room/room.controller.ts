@@ -1,12 +1,12 @@
 import sendResponse from "../../utils/sendResponse";
 import httpStatus from "http-status";
-import { catchAsync } from "../../utils/catchAsync";
 import { MeetingRoomServices } from "./room.service";
+import catchAsync from "../../utils/catchAsync";
 
 
 
 //create room
-const createMeetingRoom = catchAsync(async (req, res, next) => {
+const createMeetingRoom = catchAsync(async (req, res) => {
 
     const result = await MeetingRoomServices.createMeetingRoomIntoDB(req.body);
 
@@ -21,7 +21,7 @@ const createMeetingRoom = catchAsync(async (req, res, next) => {
 
 
 //Get a room
-const getSingleMeetingRoom = catchAsync(async (req, res, next) => {
+const getSingleMeetingRoom = catchAsync(async (req, res,next) => {
  
   const { id } = req.params;
 
@@ -39,7 +39,7 @@ const getSingleMeetingRoom = catchAsync(async (req, res, next) => {
 
 
 // Get All Meeting room
-const getAllMeetingRooms = catchAsync(async (req, res, next) => {
+const getAllMeetingRooms = catchAsync(async (req, res,next) => {
  
     const result = await MeetingRoomServices.getAllMeetingRoomsFromDB();
 
@@ -54,7 +54,7 @@ const getAllMeetingRooms = catchAsync(async (req, res, next) => {
 
 
 // Update meeting room
-const updateMeetingRoom = catchAsync(async (req, res, next) => {
+const updateMeetingRoom = catchAsync(async (req, res) => {
  
     const { id } = req.params;
     const result = await MeetingRoomServices.updateMeetingRoomIntoDB(id, req.body);
@@ -62,15 +62,14 @@ const updateMeetingRoom = catchAsync(async (req, res, next) => {
     sendResponse(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Academic Department is update successfully',
+      message: 'Room is update successfully',
       data: result,
     });
  
 });
 
 
-// Delete meeting room
-const deleteMeetingRoom = catchAsync(async (req, res) => {
+const deleteMeetingRoom = catchAsync(async (req, res,next) => {
   const {id}  = req.params;
 
   // console.log(id);

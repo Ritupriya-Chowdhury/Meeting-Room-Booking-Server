@@ -1,7 +1,7 @@
 import sendResponse from "../../utils/sendResponse";
 import httpStatus from "http-status";
-import { catchAsync } from "../../utils/catchAsync";
 import { SlotServices } from "./slot.service";
+import catchAsync from "../../utils/catchAsync";
 
 
 
