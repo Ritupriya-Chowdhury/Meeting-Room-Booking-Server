@@ -17,18 +17,18 @@
 
 2.[Get All Room api- GET]: (https://ass-3-nine.vercel.app/api/rooms)
 
-3.[Get A Room api- GET]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+3.[Get A Room api- GET]: (https://ass-3-nine.vercel.app/rooms/6676e1126aee288728c6d724)
 
-4.[Update Room api- PUT]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+4.[Update Room api- PUT]: (https://ass-3-nine.vercel.app/rooms/6676e1126aee288728c6d724)
 
-5.[Delete Room api- DELETE]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+5.[Delete Room api- DELETE]: (https://ass-3-nine.vercel.app/api/rooms/6676eb42ecbf6cd117b557e9)
 
 
 ### Slot Api:
 1.[Create Slots api- POST]: (https://ass-3-nine.vercel.app/api/slots)
 
 2.[Get available Slots api- GET]: (https://ass-3-nine.vercel.app/api/slots/availability)
-[or]: (https://ass-3-nine.vercel.app/api/slots/availability?date=2024-06-12&roomId=66764c7cf0660e22494b3584)
+[or]: (https://ass-3-nine.vercel.app/api/slots/availability?date=2024-06-12&roomId=6676e0f66aee288728c6d721)
 
 
 ### Booking Api:
@@ -36,9 +36,9 @@
 
 2.[Get All Bookings api- GET]: (https://ass-3-nine.vercel.app/api/bookings)
 
-3.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+3.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/6677029e83341448ff603d4d)
 
-4.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+4.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/6677029e83341448ff603d4d)
 
 5.[My Bookings api- GET]: (https://ass-3-nine.vercel.app/api/my-bookings)
 
@@ -47,17 +47,17 @@
 
 1.[Create Room api- POST]: (https://ass-3-nine.vercel.app/api/rooms)
 
-2.[Update Room api- PUT]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+2.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
 
-3.[Delete Room api- DELETE]: (https://ass-3-nine.vercel.app/api/rooms/66764c4af0660e22494b3581)
+3.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
 
 4.[Create Slots api- POST]: (https://ass-3-nine.vercel.app/api/slots)
 
 5.[Get All Bookings api- GET]: (https://ass-3-nine.vercel.app/api/bookings)
 
-6.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+6.[Update Bookings api- PUT]: (https://ass-3-nine.vercel.app/api/bookings/6677029e83341448ff603d4d)
 
-7.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/66767e0379b469bb5c584ecc)
+7.[Delete Booking api- DELETE]: (https://ass-3-nine.vercel.app/api/bookings/6677029e83341448ff603d4d)
 
 
 ## Routes Which Only Accessible By User:
