@@ -7,7 +7,6 @@ import handleValidationError from '../errors/handleValidationError';
 import handleDuplicateError from '../errors/handleDuplicateError';
 import AppError from '../errors/AppError';
 import handleCastError from '../errors/handleCastError';
-import notFound from './notFound';
 import httpStatus from 'http-status';
 
 const globalErrorHandler: ErrorRequestHandler = (
@@ -49,9 +48,13 @@ const globalErrorHandler: ErrorRequestHandler = (
   
   else if (err?.code === 11000) {
     const simplifiedError = handleDuplicateError(err);
-    statusCode = simplifiedError?.statusCode;
     message = simplifiedError?.message;
-    errorSources = simplifiedError?.errorSources;
+    errorSources = [
+      {
+        path: '',
+        message: err?.message,
+      },
+    ];
   } 
   
   else if (err instanceof AppError) {
