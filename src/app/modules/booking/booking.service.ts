@@ -166,6 +166,9 @@ const deleteBookingFromDB = async (id: string) => {
     const result = await Booking.findOneAndUpdate(
       {_id:id},
       {isDeleted:true},
+      {
+        new: true,
+      }
       );
 
     if (!result) {

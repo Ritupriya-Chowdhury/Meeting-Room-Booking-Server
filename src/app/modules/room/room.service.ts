@@ -144,6 +144,9 @@ const deleteMeetingRoomFromDB = async (id: string) => {
     const result = await MeetingRoom.findOneAndUpdate(
       {_id:id},
       {isDeleted:true},
+      {
+        new: true,
+      }
       );
 
     if (!result) {
