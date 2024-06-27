@@ -14,9 +14,9 @@ const createMeetingRoomIntoDB = async (payload: TRoom) => {
     session.startTransaction();
 
    
-    const result = await MeetingRoom.create([payload],{session});
+    const [result] = await MeetingRoom.create([payload],{session});
 
-    if (!result.length) {
+    if (!result) {
       throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create Meeting room');
     }
 

@@ -22,9 +22,9 @@ const createUserIntoDB = async (payload: TUser) => {
     session.startTransaction();
     
 
-    const newUser = await User.create([payload],{session});
+    const [newUser] = await User.create([payload],{session});
 
-    if (!newUser.length) {
+    if (!newUser) {
       throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create user');
     }
   

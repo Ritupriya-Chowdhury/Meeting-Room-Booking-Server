@@ -31,7 +31,7 @@ const getSingleMeetingRoom = catchAsync(async (req, res,next) => {
     statusCode: httpStatus.OK,
     success: true,
     message: 'Room retrieved successfully',
-    data: result,
+    data: {result},
   });
 
 });
